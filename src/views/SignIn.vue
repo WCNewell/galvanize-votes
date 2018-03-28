@@ -6,6 +6,7 @@
     </header>
     <main>
       <p>The future home of Galvanize Votes</p>
+      <p><router-link :to="{name: 'topics'}">Go to topics</router-link></p>
     </main>
   </div>
 </template>
@@ -13,9 +14,8 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'sign-in',
+  name: 'signIn',
   components: {
   }
 }
@@ -33,11 +33,11 @@ export default {
       h1 {
       @include primary-header-font;
       text-align: center;
-    }
+      }
       img {
             max-width: 320px;
             margin-bottom: 2rem;
-        }
+      }
     }
     main {
       p {
